@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>色彩檔案室｜首頁</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500&family=Noto+Serif+TC:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand brand-glow" href="#">🎨 色彩檔案室</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">功能介紹</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">關於我們</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3 font-serif-title">非常好色</h1>
+            <p class="lead mb-5">透過文字抽離情感，用色彩修復靈魂。探索繪本大師幾米世界中的感性光譜。</p>
+            
+            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                <a href="https://era-palette.vercel.app/" target="_blank" class="btn btn-custom-primary btn-lg px-4 gap-3 fw-bold shadow-sm">
+                    時代光譜
+                </a>
+                <a href="https://color-expert.vercel.app/" target="_blank" class="btn btn-custom-outline btn-lg px-4 fw-bold">
+                    COLOR EXPERT
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold font-serif-title">遊戲介紹</h2>
+                <p class="text-muted-thin">專案核心功能與互動美學探索</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div class="card p-4 p-md-5 shadow-sm feature-card text-white">
+                        <div class="row align-items-center g-4">
+                            
+                            <div class="col-lg-6">
+                                <div class="game-image-placeholder d-flex align-items-center justify-content-center p-0" style="border: none;">
+                                    <img src="game1.png" alt="COLOR EXPERT 遊戲畫面" class="img-fluid game-img w-100 h-100">
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <span class="badge badge-custom mb-2">主要作品</span>
+                                <h3 class="fw-bold font-serif-title mb-3" style="color: #ffffff;">時代影像館</h3>
+                                <p class="game-intro-text">
+                                    主要是學習色彩與歷史氛圍的互動網頁遊戲，同時精選多個具代表性的歷史照片為主題，讓玩家可以從場景思考當代所帶來的氛圍以及顏色，透過搭配色溫、飽和度、暗角、對比與曝光度來還原你對於這個時代的感受。
+                                </p>
+                                <p class="game-intro-text mt-3">
+                                    完成修復後送出交由智慧評分系統從三個維度分析你所還原的色調與真實歷史是否相符，若相符程度評級達標，則可以獲得時光碎片並解鎖時光修復日誌（回顧圖鑑），希望透過解鎖讓大家在其中學習歷史色彩與影像修復的知識。
+                                </p>
+                                
+                                <div class="mt-4">
+                                    <a href="https://era-palette.vercel.app/" target="_blank" class="btn btn-custom-outline btn-sm fw-bold">
+                                        進入時代光譜 →
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card p-4 p-md-5 shadow-sm feature-card text-white">
+                        <div class="row align-items-center g-4">
+                            
+                            <div class="col-lg-6">
+                                <div class="game-image-placeholder d-flex align-items-center justify-content-center p-0" style="border: none;">
+                                    <img src="game2.png" alt="COLOR EXPERT 遊戲畫面" class="img-fluid game-img w-100 h-100">
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <span class="badge badge-custom mb-2">主要作品</span>
+                                <h3 class="fw-bold font-serif-title mb-3" style="color: #ffffff;">COLOR EXPERT</h3>
+                                <p class="game-intro-text">
+                                    主要是學習色彩與情緒的學習 App，同時也利用台灣知名繪本作家幾米的書籍為主題，讓玩家可以從書名思考文字所帶來的情緒以及顏色，透過搭配主色調、次色、強調色、背景色來決定你對於這個主題的感受。
+                                </p>
+                                <p class="game-intro-text mt-3">
+                                    完成搭配後送出交由 Gemini 由專業色彩學的角度分析你所搭配的色調與主題是否相符，若相符程度高於 70，則可以解鎖該主題圖鑑，希望透過解鎖讓大家在其中學習色彩與情緒的知識。
+                                </p>
+                                
+                                <div class="mt-4">
+                                    <a href="https://color-expert.vercel.app/" target="_blank" class="btn btn-custom-outline btn-sm fw-bold">
+                                        進入修復旅程 →
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div> </div>
+    </section>
+
+    <footer class="footer-section text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">© 2026 色彩檔案室. 本網頁為課程專案發表使用.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
