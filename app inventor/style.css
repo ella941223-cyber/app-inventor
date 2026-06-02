@@ -12,9 +12,9 @@ body {
 
 /* 標題專用樣式：採用纖細有雕刻感的思源宋體 */
 .font-serif-title {
-    font-family: 'Noto Serif TC', serif;
-    font-weight: 300; /* 保持輕盈，橫線才會夠細夠精緻 */
-    letter-spacing: 0.12em; /* 圖片中拉大字距的視覺特徵 */
+    font-family: 'Noto Serif TC', serif; /* 使用極具質感的思源宋體 */
+    font-weight: 5000;       /* 💡 從原本的 300 調整為 500，讓字體變粗、更有份量 */
+    letter-spacing: 0.15em;  /* 💡 稍微再拉大一點字距，維持大器、優雅的排版視覺 */
 }
 
 .text-muted-thin {
@@ -96,8 +96,9 @@ body {
 }
 
 .hero-section h1 {
+    font-size: 4.5rem !important; /* 💡 設定大標題尺寸，原本 Bootstrap 的 display-4 大約是 3.5rem */
     color: #ffffff !important;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    text-shadow: 0 2px 12px rgba(0,0,0,0.8); /* 稍微加深陰影，讓大字在星空背景下更清晰 */
 }
 
 .hero-section p.lead {
@@ -110,17 +111,20 @@ body {
    按鈕自訂樣式
    ========================================== */
 .btn-custom-primary {
-    background-color: #ffffff !important;
+    /* 漸層色：從溫潤的粉橘色到優雅的淡紫色 */
+    background: linear-gradient(135deg, #e5d1c5 0%, #b3a7d0 100%) !important;
     color: #0b0c10 !important;
-    border: 1px solid #ffffff !important;
+    border: none !important;
     border-radius: 30px; 
-    padding: 10px 28px;
+    padding: 12px 32px;
     transition: all 0.3s ease;
+    letter-spacing: 0.1em;
 }
+
 .btn-custom-primary:hover {
-    background-color: rgba(255,255,255,0.85) !important;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+    filter: brightness(1.1); /* 懸停時稍微變亮 */
+    box-shadow: 0 10px 25px rgba(179, 167, 208, 0.2);
 }
 
 .btn-custom-outline {
@@ -234,5 +238,32 @@ h1, h2 {
     50% {
         opacity: 0.4;      /* 降到 0.4，讓星星變暗微弱，模擬真實星夜 */
         transform: scale(0.98); /* 細微縮放增加動態層次感 */
+    }
+}
+
+/* ==========================================
+   單獨針對「非常好色」大標題的特殊設定
+   ========================================== */
+.hero-main-title {
+    /* 1. 更換字體：您可以選擇 Noto Sans TC (黑體) 或是維持 Noto Serif TC 但改字重 */
+    font-family: 'ZCOOL XiaoWei', serif;
+    
+    /* 2. 單獨調整字體大小 (例如調整到 4.5rem) */
+    font-size: 5rem !important; 
+    
+    /* 3. 單獨調整字體粗細 (300 最細、500 中等、700 最粗) */
+    font-weight: 400 !important;  
+    
+    /* 4. 增加字距，讓它看起來更大器 */
+    letter-spacing: 0.2em !important; 
+    
+    /* 5. 加上一點文字光暈（對應圖片中亮亮的質感） */
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3); 
+}
+
+/* 確保在手機螢幕上字不會太大而跑版 */
+@media (max-width: 768px) {
+    .hero-main-title {
+        font-size: 2.8rem !important;
     }
 }
