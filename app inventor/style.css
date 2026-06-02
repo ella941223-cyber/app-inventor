@@ -1,7 +1,12 @@
 /* ==========================================
    全域文字與字體設定
    ========================================== */
-body {
+/* 讓網頁內的錨點跳轉（如 #features）擁有平滑滾動動畫 */
+html {
+    scroll-behavior: smooth;
+}
+
+   body {
     background-color: #0b0c10; /* 更深邃、貼近圖片基礎的微夜色 */
     color: #e2e4e9; 
     font-family: 'Noto Sans TC', sans-serif;
